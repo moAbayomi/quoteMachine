@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #333;
+}
+
+body {
+  background: var(--primary-color);
+  color: white;
+  display: grid;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+  transition: background 0.7s ease-in-out;
+}
+
+#quote-box {
+  width: 450px;
+  padding: 40px 50px;
+  background: white;
+  border-radius: 3px;
+}
+
+#text {
+  color: var(--primary-color);
+  transition: color 0.7s ease-in-out;
+
+  text-align: center;
+  font-size: 1.75em;
+}
+
+#author {
+  text-align: right;
+  color: var(--primary-color);
+  transition: color 0.7s ease-in-out;
+  font-size: 1em;
+}
+
+#footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer .social-button {
+  align-self: center;
+  width: 100px;
+}
+
+.link-social {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.link-social ion-icon {
+  color: white;
+}
+
+#button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  background: var(--primary-color);
+  transition: background 0.7s ease-in-out;
+
+  color: #fff;
+  outline: none;
+  font-size: 1em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.new-quote {
+  margin-left: auto;
+  justify-self: end;
+}
