@@ -58,7 +58,7 @@ body {
   color: white;
 }
 
-#button {
+[data-id] {
   height: 38px;
   border: none;
   border-radius: 3px;

@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/main.js"></script>
     <title>Vite App</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
         </p>
         <p id="author">Maya Angelou</p>
         <div id="footer">
-          <button id="button">
+          <button data-id="button">
             <a
               class="link-social-twitter"
               id="tweet-quote"
@@ -31,7 +32,7 @@
             </a>
           </button>
 
-          <button id="button">
+          <button data-id="button">
             <a
               class="link-social"
               blank="_blank"
@@ -41,13 +42,13 @@
             </a>
           </button>
 
-          <button id="button" class="new-quote" id="new-quote">
+          <button data-id="button" class="new-quote" id="new-quote">
             New Quote
           </button>
         </div>
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
+
     <script
       defer
       type="module"
