@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  height: 100vh;
+}
+
+#previewer {
+  max-width: 55vh;
+}
+
+#editor,
+#markedown-editor {
+  background-color: gray;
+  border: none;
+}
+
+#editor {
+  padding-left: 1rem;
+  width: calc(100% - 20px);
+  height: calc(100vh - 20px);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#preview {
+  padding-inline: 0.5rem;
+}
