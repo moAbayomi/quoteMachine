@@ -35,19 +35,109 @@
         class="grid grid-cols-3 grid-rows-3 m-[20px] gap-4 p-4"
         id="pad-bank"
       >
-        <drum-pad></drum-pad>
-        <drum-pad></drum-pad>
-        <drum-pad></drum-pad>
-        <drum-pad></drum-pad>
-        <drum-pad></drum-pad>
-        <drum-pad></drum-pad>
-        <drum-pad></drum-pad>
-        <drum-pad></drum-pad>
-        <drum-pad></drum-pad>
+        <div
+          id="Heater 1"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          Q
+          <audio
+            id="Q"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+          ></audio>
+        </div>
+        <div
+          id="Heater 2"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          W
+          <audio
+            id="W"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
+          ></audio>
+        </div>
+        <div
+          id="Heater 3"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          E
+          <audio
+            id="E"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
+          ></audio>
+        </div>
+        <div
+          id="Heater 4"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          A
+          <audio
+            id="A"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
+          ></audio>
+        </div>
+        <div
+          id="Clap"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          S
+          <audio
+            id="S"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
+          ></audio>
+        </div>
+        <div
+          id="Open HH"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          D
+          <audio
+            id="D"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
+          ></audio>
+        </div>
+        <div
+          id="Kick-n'-Hat"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          Z
+          <audio
+            id="Z"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+          ></audio>
+        </div>
+        <div
+          id="Kick"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          X
+          <audio
+            id="X"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
+          ></audio>
+        </div>
+        <div
+          id="Closed-HH"
+          class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+        >
+          C
+          <audio
+            id="C"
+            class="hidden clip"
+            src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
+          ></audio>
+        </div>
       </div>
       <div
         class="flex flex-col justify-around items-center gap-4 my-16"
-        id="display"
+        id="screen"
       >
         <div
           id="power"
@@ -61,7 +151,10 @@
             <div class="inner w-8 h-6 bg-purple-700"></div>
           </div>
         </div>
-        <div class="w-72 h-12 bg-gray-500" id="screen"></div>
+        <div
+          class="w-72 h-12 flex justify-center items-center bg-gray-500"
+          id="display"
+        ></div>
 
         <div class="volume-slider">
           <input
@@ -76,17 +169,5 @@
         </div>
       </div>
     </div>
-
-    <template id="template-drumpad">
-      <div
-        class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
-      >
-        <span>q</span>
-        <audio
-          class="hidden"
-          src="https://s3.amazonaws.com/freecodecamp/drums/"
-        ></audio>
-      </div>
-    </template>
   </body>
 </html>
