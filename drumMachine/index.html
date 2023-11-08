@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              russo: ["Russo One", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-gray-400 flex h-[100vh] w-[100%] justify-center items-center font-russo"
+  >
+    <div
+      class="flex justify-between border border-4 border-yellow-500 bg-[#b3b3b3]"
+      id="drum-machine"
+    >
+      <div
+        class="grid grid-cols-3 grid-rows-3 m-[20px] gap-4 p-4"
+        id="pad-bank"
+      >
+        <drum-pad></drum-pad>
+        <drum-pad></drum-pad>
+        <drum-pad></drum-pad>
+        <drum-pad></drum-pad>
+        <drum-pad></drum-pad>
+        <drum-pad></drum-pad>
+        <drum-pad></drum-pad>
+        <drum-pad></drum-pad>
+        <drum-pad></drum-pad>
+      </div>
+      <div
+        class="flex flex-col justify-around items-center gap-4 my-16"
+        id="display"
+      >
+        <div
+          id="power"
+          data-status="off"
+          class="flex flex-col justify-center align-center text-center mx-auto"
+        >
+          <span>power</span>
+          <div
+            class="select cursor-pointer flex w-16 h-6 bg-black box-content border-black border-4"
+          >
+            <div class="inner w-8 h-6 bg-purple-700"></div>
+          </div>
+        </div>
+        <div class="w-72 h-12 bg-gray-500" id="screen"></div>
+
+        <div class="volume-slider">
+          <input
+            min="0"
+            max="1"
+            type="range"
+            step="0.01"
+            value="0"
+            name="volume-slider"
+            id="input-slider"
+          />
+        </div>
+      </div>
+    </div>
+
+    <template id="template-drumpad">
+      <div
+        class="drum-pad cursor-pointer h-[80px] w-[100px] px-16 py-12 flex justify-center items-center bg-gray-400 rounded-md shadow-[black_3px_3px_5px] active:shadow-inner active:bg-yellow-500"
+      >
+        <span>q</span>
+        <audio
+          class="hidden"
+          src="https://s3.amazonaws.com/freecodecamp/drums/"
+        ></audio>
+      </div>
+    </template>
+  </body>
+</html>
